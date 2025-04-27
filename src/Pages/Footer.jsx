@@ -52,7 +52,7 @@ const Footer = () => {
     <hr />
     <p className="website__right">
       <FaRegCopyright style={{ marginRight: '6px', verticalAlign: 'middle' }} />
-      2015 - 2025 Abyun-Boma Oil Limited. All rights reserved.
+      2015 - 2025 Abyun-Buma Oil Limited. All rights reserved.
     </p>
     <p className="website__right1">
       Empowering & Leading Energy and
