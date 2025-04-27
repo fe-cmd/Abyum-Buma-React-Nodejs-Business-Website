@@ -1,16 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './CSS/Home.css';
 import { AnimatePresence, motion } from "framer-motion";
-import { FiMapPin, FiPhone, FiMail } from 'react-icons/fi';
-import { FaRegCopyright } from 'react-icons/fa';
+
 import { Link } from 'react-router-dom';
-import aba from '../Components/Assets/aba.png';
+
 import ao3 from '../Components/Assets/ao3.PNG';
-import ao4 from '../Components/Assets/ao4.PNG';
-import ao5 from '../Components/Assets/ao5.PNG';
+
+
 import ao6 from '../Components/Assets/ao6.PNG';
 import ao7 from '../Components/Assets/ao7.PNG';
-import ao8 from '../Components/Assets/ao8.PNG';
+
 import ao9 from '../Components/Assets/ao9.PNG';
 import ao10 from '../Components/Assets/ao10.PNG';
 import ao11 from '../Components/Assets/ao11.PNG';
@@ -93,6 +92,11 @@ const [topInView, setTopInView] = useState(false);
 const [bottomInView, setBottomInView] = useState(false);
 
 useEffect(() => {
+
+  // Store current ref values in variables
+  const currentTopRef = topRef.current;
+  const currentBottomRef = bottomRef.current;
+
     const topObserver = new IntersectionObserver(
       ([entry]) => setTopInView(entry.isIntersecting),
       { threshold: 0.5 }
@@ -102,12 +106,13 @@ useEffect(() => {
       { threshold: 0.5 }
     );
 
-    if (topRef.current) topObserver.observe(topRef.current);
-    if (bottomRef.current) bottomObserver.observe(bottomRef.current);
+     if (currentTopRef) topObserver.observe(currentTopRef);
+  if (currentBottomRef) bottomObserver.observe(currentBottomRef);
 
     return () => {
-      if (topRef.current) topObserver.unobserve(topRef.current);
-      if (bottomRef.current) bottomObserver.unobserve(bottomRef.current);
+      // Use the variables in the cleanup
+    if (currentTopRef) topObserver.unobserve(currentTopRef);
+    if (currentBottomRef) bottomObserver.unobserve(currentBottomRef);
     };
   }, []);
 
@@ -122,7 +127,6 @@ useEffect(() => {
 
     useEffect(() => {
       const section2 = document.querySelector('.section2');
-      const img = document.querySelector('.imgside');
   
       // Create an intersection observer to detect when the section is in view
       const observer = new IntersectionObserver(
@@ -147,7 +151,6 @@ useEffect(() => {
   
     useEffect(() => {
         const section3 = document.querySelector('.section3');
-        const img = document.querySelector('.imgside1');
     
         // Create an intersection observer to detect when the section is in view
         const observer1 = new IntersectionObserver(

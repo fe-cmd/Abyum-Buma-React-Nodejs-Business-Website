@@ -1,6 +1,5 @@
 import React from 'react';
 import './CSS/Equipments.css';
-import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import ao10 from '../Components/Assets/ao10.PNG';

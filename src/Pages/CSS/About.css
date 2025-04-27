@@ -205,7 +205,6 @@
   .section4 p{
     color: #333;
     text-align: justify; /* Justify text lines */
-    text-justify: inter-word;
 
   }
 

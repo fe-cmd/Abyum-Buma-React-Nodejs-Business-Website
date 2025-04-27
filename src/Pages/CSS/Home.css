@@ -139,20 +139,26 @@
     display: flex;
   }
   
-  .dropdown a {
-    padding: 8px 20px;
-    white-space: nowrap;
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s;
+  .dropdown button {
+    background: none; /* Remove button background */
+    border: none; /* Remove button border */
+    padding: 8px 20px; /* Keep the padding the same as the links */
+    white-space: nowrap; /* Prevent text from wrapping */
+    color: white; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    transition: all 0.3s; /* Apply the same transition as your links */
+    cursor: pointer; /* Make the button clickable like a link */
   }
   
-  .dropdown a:hover {
-    color: rgb(253, 128, 10);
-    position: relative;
+  .dropdown button:hover {
+    color: rgb(253, 128, 10); /* Same hover color as the link */
   }
   
-  .dropdown a:hover::after {
+  .dropdown button.clicked {
+    color: rgb(253, 128, 10); /* Same clicked color as the link */
+  }
+  
+  .dropdown button:hover::after {
     content: "";
     display: block;
     height: 2px;
@@ -161,14 +167,12 @@
     margin-top: 2px;
   }
   
-  .dropdown a.clicked {
-    color: rgb(253, 128, 10);
-  }
+ 
 
   /* Active dropdown items */
-.menu li.has-dropdown .dropdown a.active {
+  .menu li.has-dropdown .dropdown button.active {
     color: rgb(253, 128, 10);
-  }
+}
   
   /* Hamburger Icon */
 .hamburger {
@@ -688,24 +692,26 @@
     margin: 20px;
   }
   
-  .footer__link--items {
+  .footer__link--items button {
+    background: none; /* Remove button background */
+    border: none; /* Remove button border */
+    padding: 6px 20px; /* Keep the padding the same as the links */
+    color: white; /* Set text color */
+    text-decoration: none; /* Remove underline */
     display: flex;
-    flex-direction: column;
+    align-items: center; /* Align icon and text */
+    cursor: pointer; /* Make the button clickable like a link */
   }
   
-  .footer__link--items a {
-    color: white;
-    text-decoration: none;
-    margin: 6px 0;
-    display: flex;
-    align-items: center;
+  .footer__link--items button:hover {
+    color: rgb(253, 128, 10); /* Same hover color as the link */
+    text-decoration: underline; /* Underline effect on hover */
   }
   
-  .footer__link--items a:hover {
-    text-decoration: underline;
-    color: rgb(253, 128, 10);
+  .footer__link--items button.clicked {
+    color: rgb(253, 128, 10); /* Same clicked color as the link */
   }
-
+  
 .website__right{
   color: #fff;
   font-size: 14px;
@@ -746,7 +752,7 @@
     align-items: left;
   }
 
-  .footer__link--items a {
+  .footer__link--items button {
     justify-content: left;
     text-align: left;
   }

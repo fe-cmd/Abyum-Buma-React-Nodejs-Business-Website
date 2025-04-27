@@ -1,9 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import './CSS/About.css';
-import { AnimatePresence, motion } from "framer-motion";
-import { FiMapPin, FiPhone, FiMail } from 'react-icons/fi';
-import { FaRegCopyright } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 import aba from '../Components/Assets/aba.png';
 
 import ao13 from '../Components/Assets/ao13.PNG';
