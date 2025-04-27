@@ -42,19 +42,19 @@ const Contact = () => {
       <div className="famfa-history-container1">
   <div className="background-left1" style={{ backgroundColor: "rgb(8, 3, 65)" }}>
     <div className="footer__link--items" style={{ marginTop: '5vh' }}>
-      <h2 style={{ color: 'white', fontSize: '2.5vw' }}>Abyun-Buma Details</h2>
-      <a href="/">
-        <FiMapPin style={{ marginRight: '10px', fontSize: '4.5vw', color: 'rgb(253, 128, 10)' }} />
+      <h2 className='rep' >Abyun-Buma Details</h2>
+      <button className='but'>
+        <FiMapPin className='gru1'  />
         No. 26, Oro Ago Street, Garki 2, Abuja, FCT Abuja
-      </a>
-      <a href="/">
-        <FiPhone style={{ marginRight: '8px', fontSize: '2.5vw', color: 'rgb(253, 128, 10)' }} />
+      </button>
+      <button className='but'>
+        <FiPhone className='gru' />
         +234(0)8022281616
-      </a>
-      <a href="/">
-        <FiMail style={{ marginRight: '8px', fontSize: '2.5vw', color: 'rgb(253, 128, 10)' }} />
+      </button>
+      <button className='but'>
+        <FiMail className='gru' />
         info@abyunbumaoil.com
-      </a>
+      </button>
     </div>
   </div>
 
