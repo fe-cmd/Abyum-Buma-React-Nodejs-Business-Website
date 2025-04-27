@@ -1,0 +1,64 @@
+/* Centering wrapper */
+.slider-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Each slide layout */
+.slide-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: rgb(8, 3, 65);
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.slide-content img {
+  width: 50%;
+  max-height: 500px;
+  max-width: 600px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Text */
+.slide-text {
+  flex: 1;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .slide-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slide-content img {
+    width: 100%;
+  }
+
+  .slide-text {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+.back-arrow1 {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  color: #333;
+  transition: transform 0.2s ease-in-out;
+  margin-top: -30px;
+}
+
