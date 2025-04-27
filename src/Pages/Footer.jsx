@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="logo-circle1" style={{ width: '200px', height: '100px' }}>
             <img src={aba} alt='' className="logo-image1" style={{ width: '200px', height: '100px' }} />
           </div>
-          <span className="logo-text1">ABYUM-BUMA OIL</span>
+          <span className="logo-text1">ABYUN-BUMA OIL</span>
         </div>
       </div>
       <div className="footer__link--wrapper">
@@ -52,7 +52,7 @@ const Footer = () => {
     <hr />
     <p className="website__right">
       <FaRegCopyright style={{ marginRight: '6px', verticalAlign: 'middle' }} />
-      2015 - 2025 Abyum-Boma Oil Limited. All rights reserved.
+      2015 - 2025 Abyun-Boma Oil Limited. All rights reserved.
     </p>
     <p className="website__right1">
       Empowering & Leading Energy and

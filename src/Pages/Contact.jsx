@@ -34,15 +34,15 @@ const Contact = () => {
               </div>
 
               <div className="section4">
-        <h1 >Contact Abyum-Buma</h1>
+        <h1 >Contact Abyun-Buma</h1>
         <p >For specific enquiries about 
-        Abyum-Buma Oil Nigeria Limted, use the contact information below.</p>
+        Abyun-Buma Oil Nigeria Limted, use the contact information below.</p>
       </div>
 
       <div className="famfa-history-container1">
   <div className="background-left1" style={{ backgroundColor: "rgb(8, 3, 65)" }}>
     <div className="footer__link--items" style={{ marginTop: '5vh' }}>
-      <h2 style={{ color: 'white', fontSize: '2.5vw' }}>Abyum-Boma Details</h2>
+      <h2 style={{ color: 'white', fontSize: '2.5vw' }}>Abyun-Buma Details</h2>
       <a href="/">
         <FiMapPin style={{ marginRight: '10px', fontSize: '4.5vw', color: 'rgb(253, 128, 10)' }} />
         No. 26, Oro Ago Street, Garki 2, Abuja, FCT Abuja

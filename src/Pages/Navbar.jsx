@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="logo-circle">
             <img src={aba} alt='' className="logo-image"/>
           </div>
-          <span className="logo-text">ABYUM-BUMA OIL</span>
+          <span className="logo-text">ABYUN-BUMA OIL</span>
         </div>
 
         <div className="hamburger" onClick={toggleMobileMenu}>

@@ -80,7 +80,7 @@ const About = () => {
       </div>
 
       <div className="content-overlay">
-        <h1>Abyum-Buma History</h1>
+        <h1>Abyun-Buma History</h1>
         <p>
           A history that began in 2015 continues today on the road to{' '}
           <span className="highlighted-word">
