@@ -2,8 +2,9 @@ import React from 'react';
 import './CSS/Contact.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import be from '../Components/Assets/be.jpg';
 import be1 from '../Components/Assets/be1.jpg';
+import cor6 from '../Components/Assets/cor6.jpg';
+
 import { FiMapPin, FiPhone, FiMail } from 'react-icons/fi';
 
 
@@ -17,7 +18,7 @@ const Contact = () => {
                 <div
                   className="hero-slide1"
                   style={{
-                    backgroundImage: `url(${be})`,
+                    backgroundImage: `url(${cor6})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     width: '100%',

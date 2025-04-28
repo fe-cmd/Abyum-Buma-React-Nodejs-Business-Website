@@ -1,11 +1,14 @@
 import React from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import be3 from '../Components/Assets/be3.jpg';
-import be4 from '../Components/Assets/be4.jpg';
+
 import be5 from '../Components/Assets/be5.jpg';
 import be6 from '../Components/Assets/be6.jpg';
 import be7 from '../Components/Assets/be7.jpg';
+import cor from '../Components/Assets/cor.jpg';
+import cor1 from '../Components/Assets/cor1.jpg';
+
+
 import { FaArrowRight } from 'react-icons/fa';
 
 
@@ -13,12 +16,12 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const cardsData = [
     {
-      img: be3,
+      img: cor,
       title: 'Exploration/Development Team',
      
     },
     {
-      img: be4,
+      img: cor1,
       title: 'Drilling Team',
      
     },

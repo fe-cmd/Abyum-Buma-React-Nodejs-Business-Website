@@ -84,7 +84,7 @@ const About = () => {
         <p>
           A history that began in 2015 continues today on the road to{' '}
           <span className="highlighted-word">
-            energy transition
+            ENERGY TRANSITION
             <span className="underline-anim" />
           </span>
         </p>
