@@ -176,8 +176,8 @@ useEffect(() => {
     // Function to handle download
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Abyum_Buma_Company_Profile.pdf';  // path to your PDF in public folder
-    link.download = 'Abyum_Buma_Company_Profile.pdf'; // this is the name user will see
+    link.href = '/Abyun_Buma_Company_Profile.pdf';  // path to your PDF in public folder
+    link.download = 'Abyun_Buma_Company_Profile.pdf'; // this is the name user will see
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
