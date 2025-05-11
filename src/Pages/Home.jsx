@@ -173,15 +173,7 @@ useEffect(() => {
         return () => observer1.disconnect();
       }, []);
     
-    // Function to handle download
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/Abyun_Buma_Company_Profile.pdf';  // path to your PDF in public folder
-    link.download = 'Abyun_Buma_Company_Profile.pdf'; // this is the name user will see
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  
 
 
   return (
@@ -211,14 +203,6 @@ useEffect(() => {
       <div className="hero-buttons">
       <Link to="/what_we_do" style={{ textDecoration: "none" }}>
       <button className="read-more-button">Read More →</button></Link>
-      <button className="download-button" 
-      style={{ backgroundColor:'rgb(8, 3, 65)', 
-      color:'white', fontSize:'15px', 
-      padding:'20px'}}
-      onClick={handleDownload}
-      >
-      Download Our Profile
-      </button>
     </div>
   </div>
   </div>
